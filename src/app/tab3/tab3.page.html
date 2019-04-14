@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      Camara
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-button expand="full" (click) = "takePicture()">Foto</ion-button>
+  
+  <div padding>
+      <img *ngIf="image" [src]="image" alt="image">
+  </div>
+</ion-content>
