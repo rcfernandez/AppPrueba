@@ -8,9 +8,14 @@
 
 <ion-content>
 
-  <ion-button expand="full" (click) = "takePicture()">Foto</ion-button>
+  <div padding>
+    <ion-button expand="full" (click)="takePicture()">Tomar Foto &nbsp;
+        <ion-icon name="camera"></ion-icon>
+    </ion-button>
+  </div>
   
   <div padding>
+      <p>Galeria</p>
       <img *ngIf="image" [src]="image" alt="image">
   </div>
 </ion-content>
